@@ -16,7 +16,7 @@ mkdir -p ~/.config/fish/completions
 rustup completions fish > ~/.config/fish/completions/rustup.fish
 
 # sccache
-which sccache or cargo install sccache
+which sccache; or cargo install sccache
 
 echo -e "[build]\nrustc-wrapper = \""(which sccache)"\"\n" (string join \n (cat ~/.cargo/config)) > ~/.cargo/config
 
