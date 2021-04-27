@@ -2,7 +2,7 @@
 
 set fish_trace 1
 
-sudo apt update && sudo apt install build-essential pkg-config libssh-dev lld -y
+sudo apt update && sudo apt install build-essential curl pkg-config libssh-dev lld -y
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain nightly -y
 source $HOME/.cargo/env
