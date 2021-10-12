@@ -16,5 +16,5 @@ which sccache || cargo install sccache
 echo -e "[build]\nrustc-wrapper = \"`which sccache`\"\n\n`cat ~/.cargo/config`" > ~/.cargo/config
 
 # cargo tools
-cargo install cargo-audit cargo-update cargo-edit cargo-expand cargo-outdated cargo-udeps cargo-geiger cargo-tree cargo-diet
+cargo install cargo-audit cargo-update cargo-edit cargo-expand cargo-outdated cargo-udeps cargo-geiger cargo-diet
 
